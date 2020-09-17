@@ -1,2 +1,3 @@
+include ':videolibrary'
 include ':app'
 rootProject.name = "ZhuVideo"
