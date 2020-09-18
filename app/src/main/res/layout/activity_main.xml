@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <com.zhu.videolibrary.widget.media.IjkVideoView
-        android:id="@+id/ijk_video_view"
+        android:id="@+id/ijkplayer"
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:layout_gravity="center" />
+        android:layout_height="240dp"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_init"
+        android:text="初始化"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:text="播放/暂停"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
